@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clickable Images</title>
+<style>
+  
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .image-container img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+
+<div class="image-container">
+  <!-- Image 1 -->
+  <img src="https://cdn-icons-png.flaticon.com/256/888/888909.png" alt="Image 1" onclick="redirectToPage('basic html structure.html')">
+  <!-- Image 2 -->
+  <img src="https://static.vecteezy.com/system/resources/thumbnails/007/651/498/original/comment-button-animation-lower-thirds-on-green-screen-hand-drawn-speech-bubble-on-black-and-white-shape-with-sparkles-4k-10-seconds-video.jpg" alt="image" onclick="redirectToPage('comments.html')">
+  <!-- Image 3 -->
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQPdC2_pHMmIAilBKY06P4Lvie3yDF-gJ7MFp00TFjBA&s" alt="Image 3" onclick="redirectToPage(' embedding multimedia.html')">
+ </div>
+
+<script>
+  function redirectToPage(url) {
+    window.location.href = url;
+  }
+</script>
+
+</body>
+</html>
