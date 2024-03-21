@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.relative {
+  position: relative;
+  left: 20px;
+  top: 0;
+  height: 200px;
+  width: 100px;
+  padding: 4px;
+  border: 3px solid #dd1f12;
+}
+h3{
+    top: 120px;
+}
+
+.absolute{
+    position: absolute;
+  right:20px;
+  bottom: 100px;
+  width: 200px;
+  height: 200px;
+  padding: 4px;
+  border: 4px solid #73AD21;
+}
+h3{
+    bottom: 120px;
+}
+
+.fixed{
+    position: fixed;
+    right: 60px;
+    border: 3px solid rgb(28, 13, 194);
+top: 100px;
+  width: 200px;
+  height: 200px;
+  padding: 4px;
+}
+
+h3{
+    right: 60px;
+    top: 100px;
+}
+.sticky {
+  position: sticky;
+  padding: 4px;
+border: 2px solid #56053a;
+left: 20px;
+bottom: 120px;
+width: 200px;
+height: 200px;
+}
+
+h3{
+    left: 60px;
+    bottom: 100px;
+}
+
+
+</style>
+<body>
+    <h2>POSTIONING ELEMENTS</h2>
+    <P>positioning elements in  different types, know we are going to discuss about 4 types.</P>
+    
+    <div class="relative">   
+<h3>I am relative</h3>
+    An element with position: relative; is positioned relative to its normal position.
+    </div>
+    
+
+    <div class="absolute">
+        <h3>I am absolute</h3>
+        An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).  
+    </div>
+
+    <div  class="fixed">
+        <h3>I am fixed</h3>
+        An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+    </div>
+
+    <div  class="sticky">
+        <h3>I am sticky</h3>
+        A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+</div>
+
+</body>
+</html>
